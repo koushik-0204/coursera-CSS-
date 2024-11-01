@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>module2-solution</title>
+        <style>
+            
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-color: #f0f0f0;
+            }
+    
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+    
+            .section {
+                background-color: #e2e2e2;
+                padding: 20px;
+                border: 1px solid #000;
+                position: relative;
+                color: #333;
+            }
+    
+            .section-title {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #333;
+                color: #fff;
+                padding: 5px 10px;
+                border: 1px solid #000;
+            }
+    
+            /* Desktop View (992px and above) */
+            @media (min-width: 992px) {
+                .section {
+                    float: left;
+                    width: 33.33%;
+                    height: 180px;
+                }
+            }
+    
+            /* Tablet View (768px - 991px) */
+            @media (min-width: 768px) and (max-width: 991px) {
+                .section {
+                    width: 48%;
+                    height: 200px;
+                }
+    
+                /* Making the last section full width */
+                .section:last-child {
+                    width: 100%;
+                }
+            }
+    
+            /* Mobile View (767px and below) */
+            @media (max-width: 767px) {
+                .section {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        </style>
+        <body>
+        <h1>Module-2 Solution</h1>
+
+    <div class="container">
+        <div class="section">
+            <div class="section-title">Chicken</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Beef</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Sushi</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+    </div>
+
+        </body>
+</html>
